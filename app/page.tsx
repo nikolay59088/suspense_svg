@@ -1,7 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import {applyDelay} from "@/delay";
 
-export default function Home() {
+export default async function Home() {
+
+  await applyDelay(15)
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
